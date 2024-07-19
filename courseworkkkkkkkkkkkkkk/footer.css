@@ -1,0 +1,121 @@
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.company-info,
+.quick-links,
+.social-icons {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contact-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.contact-details li {
+  margin-bottom: 5px;
+}
+
+.contact-details i {
+  margin-right: 10px;
+  color: #333;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-basis: 120%;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.social-icons li {
+  margin: 0 4px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #dc3545;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a:hover {
+  color: #dc3545;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+p {
+  padding-left: 100px;
+  margin-bottom: 10px;
+}

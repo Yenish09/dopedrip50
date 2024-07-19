@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dope Drip Product</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>   
+      <div class="header-container">
+        <div class="logo">
+        <img src = "img/avatar.png" height="85px" width="300px"  />
+      </div>
+        
+        <ul class="container">
+          <li><a href="index.html" class="hover-underline-animation"><strong>HOME</strong></a></li>
+          <li><a href="allproduct.html" class="hover-underline-animation"><strong>SHOP</strong></a></li>
+          <li><a href="sale.html" class="hover-underline-animation"><strong>SALE</strong></a></li>
+          <li><a href="aboutus.html" class="hover-underline-animation"><strong>ABOUT US</strong></a></li>
+          <li><a href="contactpage.html" class="hover-underline-animation"><strong>CONTACT US</strong></a></li>
+        </ul>
+    
+        <div class="icons">
+        <ul>
+         <ion-icon name="search" class="searchBtn"></ion-icon>
+          <ion-icon name="close" class="closeBtn"></ion-icon>
+          <ion-icon name="contact"></ion-icon>
+          <ion-icon name="cart"></ion-icon>
+        </ul>
+      </div>
+      <div class="searchBox">
+        <input type="text" placeholder="Search here. . .">
+      </div>
+      </div>
+    
+      <script>
+        let searchBtn = document.querySelector('.searchBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let searchBox = document.querySelector('.searchBox');
+    
+        searchBtn.onclick = function(){
+          searchBox.classList.add("active");
+          closeBtn.classList.add("active");
+          searchBtn.classList.add("active");
+        }
+    
+        closeBtn.onclick = function(){
+          searchBox.classList.remove("active");
+          closeBtn.classList.remove("active");
+          searchBtn.classList.remove("active");
+        }
+    
+      </script>
+
+      <!---featured productsssss-->
+
+      <div class="left-container">
+        <h3>Catagories</h3>
+        <p2><a href="allproduct.html">All Products</a></p2>
+        <p2><a href="Suits.html">Suits</a></p2>
+        <p2><a href="shirt.html">Shirt</a></p2>
+        <p2><a href="pants.html">Pants</a></p2>
+        <p2><a href="shoes.html">Shoes</a></p2>
+        <div class="second-container">
+            <h3>BRANDS</h3>
+        <p2><a href="onlyandsons.html">Only & Sons</a></p2>
+        <p2><a href="celine.html">Celine</a></p2>
+        <p2><a href="ellesse.html">Ellesse</a></p2>
+        <p2><a href="bensherman.html">Ben Sherman</a></p2>
+
+        </div>
+      </div>
+
+
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>BEN SHERMAN</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by popularity</option>
+                <option>Short by rating</option>
+                <option>Short by sale</option>
+                
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/bensherman/ben sherman beige shoes.webp">
+                <h4>Beige Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p1>£ 50</p1>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/bensherman/ben sherman grey shoes.webp">
+                <h4>Grey Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p1>£ 35</p1>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/bensherman/ben sherman oxford shirt.webp">
+                <h4>Oxford Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p1>£ 35</p1>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+        </div>
+    </div>
+            
+            <footer>
+                <div class="footer-wrapper">
+                <div class="company-info">
+                  <h3>Need Help</h3>
+                  <ul>
+                  <li><a href="login.html">Register</a></li>
+                  <li><a href="ship.html">Shipping</a></li>
+                  <li><a href="allproduct.html">Shop</a></li>
+                  </ul>
+                </div>
+                <div class="quick-links">
+                  <h3>Quick Links</h3>
+                  <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="faq.html">FAQs</a></li>
+                  </ul>
+                </div>
+                 
+                 <div class="contact-info">
+                  <h3>Contact Us</h3>
+                  <ul class="contact-details">
+                  <li><a href="mailto:dopedrip50@gmail.com"><i class="far fa-envelope">dopedrip50@gmail.com</i></a></li>
+                  <li><a href ="#"><i class="fas fa-phone">  +44 700000000</i></a></li>
+                  </ul>
+                <ul class="social-icons">
+                   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+                
+                <p>Powered by Dope Drip50</p>
+                
+                </div>
+              
+
+</body>
+</html>

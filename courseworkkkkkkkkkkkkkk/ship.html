@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping</title>
+  <link rel="stylesheet" href="shipping.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">  
+</head>
+<body>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/avatar.png" height="85px" width="300px" />
+    </div>
+    <ul class="container">
+      <li><a href="index.html" class="hover-underline-animation"><strong>HOME</strong></a></li>
+      <li><a href="allproduct.html" class="hover-underline-animation"><strong>SHOP</strong></a></li>
+      <li><a href="sale.html" class="hover-underline-animation"><strong>SALE</strong></a></li>
+      <li><a href="aboutus.html" class="hover-underline-animation"><strong>ABOUT US</strong></a></li>
+      <li><a href="contactpage.html" class="hover-underline-animation"><strong>CONTACT US</strong></a></li>
+    </ul>
+    <div class="icons">
+      <ul>
+        <ion-icon name="search" class="searchBtn"></ion-icon>
+        <ion-icon name="close" class="closeBtn"></ion-icon>
+        <ion-icon name="contact"></ion-icon>
+        <ion-icon name="cart"></ion-icon>
+      </ul>
+    </div>
+    <div class="searchBox">
+      <input type="text" placeholder="Search here. . .">
+    </div>
+  </div>
+
+  <script>
+    let searchBtn = document.querySelector('.searchBtn');
+    let closeBtn = document.querySelector('.closeBtn');
+    let searchBox = document.querySelector('.searchBox');
+
+    searchBtn.onclick = function(){
+      searchBox.classList.add("active");
+      closeBtn.classList.add("active");
+      searchBtn.classList.add("active");
+    }
+
+    closeBtn.onclick = function(){
+      searchBox.classList.remove("active");
+      closeBtn.classList.remove("active");
+      searchBtn.classList.remove("active");
+    }
+  </script>
+
+  <div class="shipping-section">
+    <div class="shipping-banner">
+      <img src="img/b1.png" alt="Shipping">
+      <h1 class="shipping-title">Shipping Information</h1>
+    </div>
+    <div class="shipping-details">
+      <h2>Our Shipping Policy</h2>
+      <p>
+        We offer free standard shipping on all orders over $50. For orders under $50, a standard shipping fee will be applied at checkout. We also offer expedited and express shipping options for an additional fee.
+      </p>
+      <h2>Shipping Times</h2>
+      <ul>
+        <li>Standard Shipping: 5-7 business days</li>
+        <li>Expedited Shipping: 2-3 business days</li>
+        <li>Express Shipping: 1-2 business days</li>
+      </ul>
+      <h2>International Shipping</h2>
+      <p>
+        We ship internationally to most countries. International shipping rates and delivery times vary depending on the destination. Please check the shipping rates and estimated delivery times at checkout.
+      </p>
+      <h2>Order Tracking</h2>
+      <p>
+        Once your order has shipped, you will receive a shipping confirmation email with a tracking number. You can use this tracking number to check the status of your delivery.
+      </p>
+      <h2>Returns and Exchanges</h2>
+      <p>
+        If you are not completely satisfied with your purchase, you can return or exchange it within 30 days of delivery. Please visit our <a href="return-policy.html">Return Policy</a> page for more details.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="company-info">
+        <h3>Need Help</h3>
+        <ul>
+          <li><a href="login.html">Register</a></li>
+          <li><a href="ship.html">Shipping</a></li>
+          <li><a href="allproduct.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <ul class="contact-details">
+          <li><a href="mailto:dopedrip50@gmail.com"><i class="far fa-envelope"></i> dopedrip50@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-phone"></i> +44 7000000000</a></li>
+        </ul>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <p>Powered by Dope Drip50</p>
+    </div>
+  </footer>
+
+</body>
+</html>

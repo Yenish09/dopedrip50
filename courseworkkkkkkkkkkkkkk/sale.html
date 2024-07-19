@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sale</title>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<style>
+    .sale-section {
+  background: white;
+}
+
+.sale-banner {
+  position: relative;
+}
+
+.sale-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  letter-spacing: 5px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.sale-banner img {
+  height: 550px;
+  width: 100%;
+  display: block;
+  opacity: 0.8;
+  padding-bottom: 20px;
+}
+
+.sale-details {
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.sale-details p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+</style>
+<body>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/avatar.png" height="85px" width="300px" />
+    </div>
+    <ul class="container">
+      <li><a href="index.html" class="hover-underline-animation"><strong>HOME</strong></a></li>
+      <li><a href="allproduct.html" class="hover-underline-animation"><strong>SHOP</strong></a></li>
+      <li><a href="sale.html" class="hover-underline-animation"><strong>SALE</strong></a></li>
+      <li><a href="aboutus.html" class="hover-underline-animation"><strong>ABOUT US</strong></a></li>
+      <li><a href="contactpage.html" class="hover-underline-animation"><strong>CONTACT US</strong></a></li>
+    </ul>
+    <div class="icons">
+      <ul>
+        <ion-icon name="search" class="searchBtn"></ion-icon>
+        <ion-icon name="close" class="closeBtn"></ion-icon>
+        <ion-icon name="contact"></ion-icon>
+        <ion-icon name="cart"></ion-icon>
+      </ul>
+    </div>
+    <div class="searchBox">
+      <input type="text" placeholder="Search here. . .">
+    </div>
+  </div>
+
+  <script>
+    let searchBtn = document.querySelector('.searchBtn');
+    let closeBtn = document.querySelector('.closeBtn');
+    let searchBox = document.querySelector('.searchBox');
+
+    searchBtn.onclick = function(){
+      searchBox.classList.add("active");
+      closeBtn.classList.add("active");
+      searchBtn.classList.add("active");
+    }
+
+    closeBtn.onclick = function(){
+      searchBox.classList.remove("active");
+      closeBtn.classList.remove("active");
+      searchBtn.classList.remove("active");
+    }
+  </script>
+
+  <div class="sale-section">
+    <div class="sale-banner">
+      <img src="img/b2.png" alt="Sale Coming Soon">
+      <h1 class="sale-title">Sale Coming Soon!</h1>
+    </div>
+    <div class="sale-details">
+      <p>Stay tuned! Our biggest sale of the season is just around the corner. Check back soon for incredible discounts and exclusive offers.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="company-info">
+        <h3>Need Help</h3>
+        <ul>
+          <li><a href="login.html">Register</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+          <li><a href="allproduct.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <ul class="contact-details">
+          <li><a href="mailto:dopedrip50@gmail.com"><i class="far fa-envelope"></i> dopedrip50@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-phone"></i> +44 7000000000</a></li>
+        </ul>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <p>Powered by Dope Drip50</p>
+    </div>
+  </footer>
+
+</body>
+</html>

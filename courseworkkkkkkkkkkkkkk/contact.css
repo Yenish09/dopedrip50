@@ -1,0 +1,91 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+   
+ #Contact-Form{
+    margin-left:10%;
+    width: 600px;
+    float: left;
+    height: auto;
+        
+    }
+    .Form-Box h1{
+    text-align:auto;
+    padding-left:150px;
+    font-size: 30px;
+    padding-top: 40px;
+    }
+   
+    #LeaveMessage{
+    width: 540px;
+    float: left;
+    height: 160px;
+    padding-left: 12px;
+    padding-top: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
+    .SubmitButton{
+    width: 540px;
+    height: 55px;
+    background-color:black;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    border: none;
+    
+    }
+    .input-icons i {
+    position: absolute;
+    padding-top: 23px;
+    }
+          
+    .input-icons {
+    width: 90%;
+    margin-bottom: 10px;
+    }
+          
+    .icon {
+    padding: 10px;
+    min-width: 40px;
+    }
+    .input-field {
+    width: 100%;
+    padding: 24px;
+    }
+  
+    .container-logo{
+    padding-top: 40px;
+    margin-left:5%;
+    float: left;
+    text-align:auto;
+
+    }
+   .Logo{
+    margin-left: 145px;
+    padding-top: 90px;
+    
+    }
+    img {
+    object-fit: cover; 
+    
+    }
+    li{
+    padding-top: 6px;
+    }
+   
+   .container-logo .contact-icon ul li{
+    font-size: 15px;
+    display: flex;
+    margin-left: 160px;
+  
+   }
+ 
+    .container-logo .contact-icon p{
+    padding-top: 14px;
+    margin-left: 160px;
+    }

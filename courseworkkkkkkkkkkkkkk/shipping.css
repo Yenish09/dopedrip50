@@ -1,0 +1,62 @@
+.shipping-section {
+    background: white;
+  }
+  
+  .shipping-banner {
+    position: relative;
+  }
+  
+  .shipping-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .shipping-banner img {
+    height: 550px;
+    width: 100%;
+    display: block;
+    opacity: 0.8;
+    padding-bottom: 20px;
+  }
+  
+  .shipping-details {
+    text-align: left;
+    padding: 30px 50px;
+  }
+  
+  .shipping-details h2 {
+    font-size: 28px;
+    color: black;
+    margin-top: 20px;
+  }
+  
+  .shipping-details p, .shipping-details ul {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  .shipping-details ul {
+    padding-left: 20px;
+  }
+  
+  .shipping-details ul li {
+    margin-top: 5px;
+  }
+  
+  .shipping-details a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .shipping-details a:hover {
+    color: red;
+  }
+  

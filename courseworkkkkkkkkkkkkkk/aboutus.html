@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">  
+</head>
+<body>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/avatar.png" height="85px" width="300px" />
+    </div>
+    <ul class="container">
+      <li><a href="index.html" class="hover-underline-animation"><strong>HOME</strong></a></li>
+      <li><a href="allproduct.html" class="hover-underline-animation"><strong>SHOP</strong></a></li>
+      <li><a href="sale.html" class="hover-underline-animation"><strong>SALE</strong></a></li>
+      <li><a href="aboutus.html" class="hover-underline-animation"><strong>ABOUT US</strong></a></li>
+      <li><a href="contactpage.html" class="hover-underline-animation"><strong>CONTACT US</strong></a></li>
+    </ul>
+    <div class="icons">
+      <ul>
+        <ion-icon name="search" class="searchBtn"></ion-icon>
+        <ion-icon name="close" class="closeBtn"></ion-icon>
+        <ion-icon name="contact"></ion-icon>
+        <ion-icon name="cart"></ion-icon>
+      </ul>
+    </div>
+    <div class="searchBox">
+      <input type="text" placeholder="Search here. . .">
+    </div>
+  </div>
+
+  <script>
+    let searchBtn = document.querySelector('.searchBtn');
+    let closeBtn = document.querySelector('.closeBtn');
+    let searchBox = document.querySelector('.searchBox');
+
+    searchBtn.onclick = function(){
+      searchBox.classList.add("active");
+      closeBtn.classList.add("active");
+      searchBtn.classList.add("active");
+    }
+
+    closeBtn.onclick = function(){
+      searchBox.classList.remove("active");
+      closeBtn.classList.remove("active");
+      searchBtn.classList.remove("active");
+    }
+  </script>
+
+  <div class="about-section">
+    <div class="about-banner">
+      <img src="img/cloth.jpg" alt="Clothing">
+      <h1 class="about-title">About Us</h1>
+    </div>
+    <div class="about-features">
+      <div class="feature-box">
+        <a href="#">
+          <img src="fs.png" alt="Free Shipping">
+          <h2>Free Shipping</h2>
+        </a>
+      </div>
+      <div class="feature-box">
+        <a href="#">
+          <img src="fr.png" alt="Free Returning">
+          <h2>Free Returning</h2>
+        </a>
+      </div>
+      <div class="feature-box">
+        <a href="#">
+          <img src="ss.png" alt="Secure Shopping">
+          <h2>Secure Shopping</h2>
+        </a>
+      </div>
+      <div class="feature-box">
+        <a href="#">
+          <img src="su.png" alt="Support 24/7">
+          <h2>Support 24/7</h2>
+        </a>
+      </div>
+    </div>
+    <div class="about-details">
+      <p>
+        It's essential to understand the basics of ecommerce regardless of if you run a small
+        one-person online store or a large online and retail business. In this article, we provide
+        an in-depth explanation of what ecommerce is, how it works, and why it's crucial for businesses
+        to have an online presence. The article covers the different types of ecommerce models, the benefits
+        of ecommerce, and the challenges that small businesses may face when starting an online store. By reading
+        this article, you can gain a better understanding of ecommerce and how it can help you grow your business.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="company-info">
+        <h3>Need Help</h3>
+        <ul>
+          <li><a href="login.html">Register</a></li>
+          <li><a href="ship.html">Shipping</a></li>
+          <li><a href="allproduct.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <ul class="contact-details">
+          <li><a href="mailto:dopedrip50@gmail.com"><i class="far fa-envelope"></i> dopedrip50@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-phone"></i> +44 7000000000</a></li>
+        </ul>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <p>Powered by Dope Drip50</p>
+    </div>
+  </footer>
+
+</body>
+</html>

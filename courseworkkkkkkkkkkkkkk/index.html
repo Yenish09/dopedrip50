@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dope Drip50</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="logo">
+            <img src="img/avatar.png" height="90px" width="300px" style="border-radius: 10px;" />
+        </div>
+
+        <ul class="container">
+            <li><a href="index.html" class="hover-underline-animation"><strong>HOME</strong></a></li>
+            <li><a href="allproduct.html" class="hover-underline-animation"><strong>SHOP</strong></a></li>
+            <li><a href="sale.html" class="hover-underline-animation"><strong>SALE</strong></a></li>
+            <li><a href="aboutus.html" class="hover-underline-animation"><strong>ABOUT US</strong></a></li>
+            <li><a href="contactpage.html" class="hover-underline-animation"><strong>CONTACT US</strong></a></li>
+        </ul>
+
+        <div class="icons">
+            <ul>
+                <ion-icon name="search" class="searchBtn"></ion-icon>
+                <ion-icon name="close" class="closeBtn"></ion-icon>
+                <ion-icon name="contact"></ion-icon>
+                <ion-icon name="cart"></ion-icon>
+            </ul>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Search here...">
+        </div>
+    </div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let searchBtn = document.querySelector('.searchBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let searchBox = document.querySelector('.searchBox');
+
+        searchBtn.addEventListener('click', function() {
+            searchBox.classList.add("active");
+            closeBtn.classList.add("active");
+            searchBtn.classList.add("active");
+        });
+
+        closeBtn.addEventListener('click', function() {
+            searchBox.classList.remove("active");
+            closeBtn.classList.remove("active");
+            searchBtn.classList.remove("active");
+        });
+    });
+</script>
+
+<div class="w3-content w3-section" style="max-width:100%">
+    <a href="allproduct.html"><img class="mySlides" src="images/banner holiday spirit.webp" style="width:100%"></a>
+    <a href="allproduct.html"><img class="mySlides" src="images/banner spring.jpg" style="width:100%"></a>
+    <a href="allproduct.html"><img class="mySlides" src="images/banner summer.jpg" style="width:100%"></a>
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
+<!---brands----->
+<h2 class="title">Top Brands</h2>
+<div class="brands">
+    <div class="brand">
+        <div class="row">
+            <div class="col-5">
+                <a href="onlyandsons.html"><img src="img/onlybrand.jpg"></a>
+            </div>
+            <div class="col-5">
+                <a href="celine.html"><img src="img/celinebrand.png"></a>
+            </div>
+            <div class="col-5">
+                <a href="ellesse.html"><img src="img/ellesse brand.png"></a>
+            </div>
+            <div class="col-5">
+                <a href="bensherman.html"><img src="img/benshermanlogo.jpg"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <h2 class="title">TOP SELLERS OF THE MONTH</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/celine/celine shoes high top.jpg">
+            <h4>High top Shoe</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p1>£ 280</p1>
+            <button class="add-to-cart" >Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="images/onlysons/onlysons resortshirt.webp">
+            <h4>Resort Shirt</h4>
+            
+            <p1>£ 60</p1>
+            <button class="add-to-cart" >Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="images/shoes 203695013-1-black.webp">
+            <h4>Gum Sole</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p1>£ 250</p1>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="images/celine/celine offwhitesuit.webp">
+            <h4>Off White Suit</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p1>£ 1500</p1>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-wrapper">
+        <div class="company-info">
+            <h3>Need Help</h3>
+            <ul>
+                <li><a href="login.html">Register</a></li>
+                <li><a href="ship.html">Shipping</a></li>
+                <li><a href="allproduct.html">Shop</a></li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <ul class="contact-details">
+                <li><a href="mailto:dopedrip50@gmail.com"><i class="far fa-envelope"></i> dopedrip50@gmail.com</a></li>
+                <li><a href="#"><i class="fas fa-phone"></i> +44 7000000000</a></li>
+            </ul>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <p>Powered by Dope Drip50</p>
+    </div>
+</footer>
+
+</body>
+</html>

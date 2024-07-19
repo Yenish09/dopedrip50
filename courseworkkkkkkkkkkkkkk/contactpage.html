@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dope Drip50 Contact</title>
+  <link rel="shortcut icon" href="image/thelogo1.png">
+  <meta name="Description" content="Content of contact page"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ef26d339d1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/avatar.png" height="85px" width="300px"/>
+    </div>
+    <ul class="container">
+      <li><a href="index.html" class="hover-underline-animation"><strong>HOME</strong></a></li>
+      <li><a href="allproduct.html" class="hover-underline-animation"><strong>SHOP</strong></a></li>
+      <li><a href="sale.html" class="hover-underline-animation"><strong>SALE</strong></a></li>
+      <li><a href="aboutus.html" class="hover-underline-animation"><strong>ABOUT US</strong></a></li>
+      <li><a href="contactpage.html" class="hover-underline-animation"><strong>CONTACT US</strong></a></li>
+    </ul>
+    <div class="icons">
+      <ul>
+        <ion-icon name="search" class="searchBtn"></ion-icon>
+        <ion-icon name="close" class="closeBtn"></ion-icon>
+        <ion-icon name="contact"></ion-icon>
+        <ion-icon name="cart"></ion-icon>
+      </ul>
+    </div>
+    <div class="searchBox">
+      <input type="text" placeholder="Search here...">
+    </div>
+  </div>
+  
+  <script>
+    let searchBtn = document.querySelector('.searchBtn');
+    let closeBtn = document.querySelector('.closeBtn');
+    let searchBox = document.querySelector('.searchBox');
+
+    searchBtn.onclick = function(){
+      searchBox.classList.add("active");
+      closeBtn.classList.add("active");
+      searchBtn.classList.add("active");
+    }
+
+    closeBtn.onclick = function(){
+      searchBox.classList.remove("active");
+      closeBtn.classList.remove("active");
+      searchBtn.classList.remove("active");
+    }
+  </script>
+
+  <section id="Contact-Form">
+    <div class="Form-Box">
+      <h1><b>Contact Us</b></h1>
+      <form onsubmit="return validateForm()">
+        <div class="input-icons">
+          <a href="#"><i class="fa fa-user icon"></i></a>
+          <input class="input-field" type="text" id="name" placeholder="NAME">
+        </div>
+        <div class="input-icons">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="text" id="email" placeholder="Email address">
+        </div>
+        <div class="input-icons">
+          <textarea id="LeaveMessage" placeholder="Write a message"></textarea>
+        </div>
+        <div class="input-icons">
+          <button type="submit" class="SubmitButton">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('LeaveMessage').value;
+      
+      if (name == "" || email == "" || message == "") {
+        alert("Name, Email, and Message must be filled out");
+        return false;
+      }
+
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+      }
+
+      // Display success message
+      alert("Message send successfully! We will get back to you within 24 hours");
+      return true;
+    }
+  </script>
+
+  <div class="container-logo">
+    <div class="Logo">
+      <img src="img/avatar.png" alt="image" width="355" height="84">
+    </div>
+    <div class="contact-icon">
+      <ul>
+        <li><a href="#"><i class="fas fa-envelope"> dopedrip50@gmail.com</i></a></li>
+        <li><a href="#"><i class="fas fa-phone"> +44 7000000000</i></a></li>
+        <li><a href="#"><i class="fas fa-home"> London, England</i></a></li>
+      </ul>
+      <p>Got any question? Fill the form</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="company-info">
+        <h3>Need Help</h3>
+        <ul>
+          <li><a href="login.html">Register</a></li>
+          <li><a href="ship.html">Shipping</a></li>
+          <li><a href="allproduct.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <ul class="contact-details">
+          <li><a href="mailto:dopedrip50@gmail.com"><i class="far fa-envelope"> dopedrip50@gmail.com</i></a></li>
+          <li><a href="#"><i class="fas fa-phone"> +44 7800000000</i></a></li>
+        </ul>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      </div>
+      <p>Powered by Dope Drip50</p>
+    </div>
+  </footer>
+</body>
+</html>

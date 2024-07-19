@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Dope Drip 50</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="logo">
+            <img src="img/avatar.png" height="90px" width="300px" style="border-radius: 10px;" />
+        </div>
+
+        <ul class="container">
+            <li><a href="index.html" class="hover-underline-animation"><strong>HOME</strong></a></li>
+            <li><a href="allproduct.html" class="hover-underline-animation"><strong>SHOP</strong></a></li>
+            <li><a href="sale.html" class="hover-underline-animation"><strong>SALE</strong></a></li>
+            <li><a href="aboutus.html" class="hover-underline-animation"><strong>ABOUT US</strong></a></li>
+            <li><a href="contactpage.html" class="hover-underline-animation"><strong>CONTACT US</strong></a></li>
+        </ul>
+
+        <div class="icons">
+            <ul>
+                <ion-icon name="search" class="searchBtn"></ion-icon>
+                <ion-icon name="close" class="closeBtn"></ion-icon>
+                <ion-icon name="contact"></ion-icon>
+                <ion-icon name="cart"></ion-icon>
+            </ul>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">Welcome back!</h1>
+
+    <form id="loginForm" onsubmit="return validateLoginForm()">
+        <div class="form-body">
+            <div class="login-container">
+                <div class="head-text">
+                    <h1 id="login">Log in</h1>
+                </div>
+            </div>
+            <div class="container">
+                <br />
+                <div class="label">
+                    <label for="Email" class="label">Email:</label>
+                </div>
+                <input
+                    type="email"
+                    id="Email"
+                    name="Email"
+                    required
+                    placeholder="Enter your email"
+                    class="box"
+                />
+                <br />
+                <div class="label">
+                    <label for="Password" class="label">Password:</label>
+                </div>
+                <input
+                    type="password"
+                    id="Password"
+                    name="Password"
+                    required
+                    placeholder="Enter your password"
+                    class="box"
+					minlength="8"
+                />
+            </div>
+            <br />
+            <div class="button">
+                <input type="submit" value="Log in" class="login-btn" />
+            </div>
+
+            <br />
+            <div class="login-area">
+                <p id="login1">No account?</p>
+                <a href="signup.html">
+                    <p id="login2">Sign up here.</p>
+                </a>
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="company-info">
+                <h3>Need Help</h3>
+                <ul>
+                    <li><a href="login.html">Register</a></li>
+                    <li><a href="ship.html">Shipping</a></li>
+                    <li><a href="allproduct.html">Shop</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <ul class="contact-details">
+                    <li><a href="mailto:dopedrip50@gmail.com"><i class="far fa-envelope"></i> dopedrip50@gmail.com</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +44 7000000000</a></li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <p>Powered by Dope Drip50</p>
+        </div>
+    </footer>
+
+    <script>
+        function validateLoginForm() {
+            var email = document.getElementById('Email').value;
+            var password = document.getElementById('Password').value;
+            
+            if (email.trim() === '') {
+                alert('Email must be filled out');
+                return false;
+            }
+            
+            if (password.trim() === '') {
+                alert('Password must be filled out');
+                return false;
+            }
+
+            // Display success message (optional)
+            alert('Login successful!');
+
+            // Reload the page
+            return true;
+        }
+    </script>
+</body>
+</html>
